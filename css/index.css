@@ -316,7 +316,7 @@ nav .navBar a:hover {
   display: block;
   padding: 1.5rem 0;
   width: 80%;
-  background: #17A2B8;
+  background: #008080;
   border-radius: 16px;
   text-decoration: none;
   color: #FFFFFF;
@@ -325,13 +325,27 @@ nav .navBar a:hover {
 }
 .home .content-pick .destination a:hover {
   background: #FFFFFF;
-  color: #17A2B8;
-  border: 1px solid #17A2B8;
+  color: #008080;
+  border: 1px solid #008080;
   padding: 1.3rem 0;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination a {
+    display: block;
+    padding: 1.5rem 0;
     width: 100%;
+    background: #17A2B8;
+    border-radius: 16px;
+    text-decoration: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  .home .content-pick .destination a:hover {
+    background: #FFFFFF;
+    color: #17A2B8;
+    border: 1px solid #17A2B8;
+    padding: 1.3rem 0;
   }
 }
 .footer {
