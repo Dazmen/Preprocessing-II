@@ -348,6 +348,73 @@ nav .navBar a:hover {
     padding: 1.3rem 0;
   }
 }
+.home #contactForm {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.home #contactForm .name {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.home #contactForm .name input {
+  width: 80%;
+  font-size: 1.6rem;
+}
+.home #contactForm .name label {
+  font-size: 1.6rem;
+}
+.home #contactForm .email {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.home #contactForm .email input {
+  width: 80%;
+  font-size: 1.6rem;
+}
+.home #contactForm .email label {
+  font-size: 1.6rem;
+}
+.home #contactForm .number {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.home #contactForm .number input {
+  width: 80%;
+  font-size: 1.6rem;
+}
+.home #contactForm .number label {
+  font-size: 1.6rem;
+}
+.home #contactForm .package {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.home #contactForm .package input {
+  width: 80%;
+  font-size: 1.6rem;
+}
+.home #contactForm .package label {
+  font-size: 1.6rem;
+}
+.home #contactForm .instruction {
+  margin: 4rem auto;
+}
+.home #contactForm .instruction textarea {
+  width: 100%;
+  height: 25rem;
+}
+.home #contactForm .instruction label {
+  font-size: 1.6rem;
+  margin: 4rem auto;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
