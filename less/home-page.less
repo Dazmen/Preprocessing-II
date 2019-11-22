@@ -1,3 +1,12 @@
+.homeHeader{
+  img{
+
+  }//end of img
+  .headerContent{
+    padding: 1.5rem 0;
+    border-bottom: 2px dashed @navigation-border;
+  }
+}//end of .homeHeader
 .home {
 
   .content-section {
@@ -5,17 +14,23 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile{
+        width:100%;
+        padding-right:0;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile{
+        width:100%;
+        padding-left: 0;
+      }
 
       img {
         border-radius: 10px;
@@ -26,10 +41,18 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile{
+      display:flex;
+      flex-direction:column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      @media @mobile{
+        width:100%;
+        padding-left:0;
+      }
     }
 
     .img-content {
@@ -41,6 +64,9 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media @mobile{
+      width:100%;
+    }
 
     img {
       border-radius: 10px;
@@ -52,10 +78,55 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile{
+      flex-direction: column;
+      align-items: center;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile{
+        width:80%;
+      }
+      a{
+        .sButtonA(@btn-color, @white,80%);
+        @media @mobile{
+          .sButtonA(@eastern-blue, @white, 100%);
+        }
+      }//end of a
+    }//end of .destination
+  }//end of .content-pick
+  #contactForm{
+    padding:2rem 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    .name{
+      .form-input(80%, 1.6rem);
     }
+    .email{
+      .form-input(80%, 1.6rem);
+    }
+    .number{
+      .form-input(80%, 1.6rem);
+    }
+    .package{
+      .form-input(80%, 1.6rem);
+    }
+    .instruction{
+      margin: 4rem auto;
+      textarea{
+        width:100%;
+        height:25rem;
+      }
+      label{
+        font-size: 1.6rem;
+        margin: 4rem auto;
+      }
+    }
+    
   }
 }// home
